@@ -102,6 +102,33 @@ section:nth-child(even) {
   margin-bottom: 20px;
 }
 
+/* Tooltip for Buch pronunciation */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip:after {
+  content: ' pronounced "bush"';
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 12px;
+  letter-spacing: .02rem;
+}
+.tooltip:hover:after {
+  display: block;
+}
+
+
 /* NAVIGATION BAR */
 
 nav {
