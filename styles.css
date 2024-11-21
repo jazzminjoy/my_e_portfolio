@@ -153,7 +153,7 @@ section:nth-child(even) {
   color: white;
   background-color: #373737;
   border-radius: 50%;
-  transition: color 0.7s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 @property --fill {
@@ -164,8 +164,9 @@ section:nth-child(even) {
 
 .social a:hover,
 .project__description--link:hover {
-  color: greenyellow;
-  /* color: #6030b1; */
+  /* color: greenyellow; */
+  color: #6030b1;
+  background-color: #fff;
   --fill: 100%;
 }
 
@@ -336,7 +337,12 @@ nav {
 
 .wave {
   display: inline-block;
-  animation: animate-wave 500ms 50 ease-in-out;
+  /* animation: animate-wave 500ms 50 ease-in-out; */
+}
+
+
+.wave:hover {
+  animation: animate-wave 500ms infinite ease-in-out;
 }
 
 @keyframes animate-wave {
